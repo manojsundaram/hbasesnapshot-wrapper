@@ -1,4 +1,4 @@
-# hbasesnapshot-wrapper
+# hbase replicate table across clusters (direct hfile write)
 
  DISCLAIMER
 
