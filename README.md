@@ -30,7 +30,7 @@ Example:
 bash take_snapshot.sh table_name
 
 #
-<b>IMPORTING SNAPSHOT AND CLONING LOCALLY (on the destination cluster)</b>
+<b>IMPORTING SNAPSHOT AND CLONING LOCALLY (on the destination cluster):</b>
 
 This script will import a hbase snapshot from a remote cluster and clone it to a local hbase table.
 
