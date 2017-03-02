@@ -18,8 +18,10 @@
 # You are responsible for reviewing and testing any scripts you run thoroughly
 # before use in any non-testing environment.
 
+# For daily snapshot format (named with YYMMDD)
 #export TS=`date +"%Y%m%d"`
 
+# For frequent snapshots (named with the epoch time)
 export TS=`date "+%s"`
 export WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export LOGS=$WORKING_DIR/logs
@@ -31,7 +33,6 @@ then
 	exit 1;
 fi
 
-# Log
 echo "New snapshot... table $1:snapshot-$TS" >> $LOGS/runs.txt
 
 echo "snapshot '$1', 'snapshot-$TS'" | /usr/bin/hbase shell -n 2>> $LOGS/runs.txt 
